@@ -1,1 +1,1 @@
-# tiny-drone
+# tinyML + Rust = ❤️
