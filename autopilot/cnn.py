@@ -23,8 +23,7 @@ def train(train_data, val_data, model, initial_epoch):
     )
 
     optimizer = tf.keras.optimizers.Adam(learning_rate=lr_schedule)
-    # Configure training process
-    # TODD("Add training process config")
+
     model.compile(
         optimizer=optimizer,
         loss=[
@@ -33,7 +32,7 @@ def train(train_data, val_data, model, initial_epoch):
         ],
         loss_weights=[model.alpha, model.beta],
     )
-    # Train model
+
     steps_per_epoch = int(np.ceil(train_data.samples / 32))
     val_steps = int(np.ceil(val_data.samples / 32))
 
@@ -46,8 +45,6 @@ def train(train_data, val_data, model, initial_epoch):
         initial_epoch=initial_epoch,
     )
 
-    # Save the model in tflite format
-    # Convert the model.
     converter = tf.lite.TFLiteConverter.from_keras_model(model)
     tflite_model = converter.convert()
 
