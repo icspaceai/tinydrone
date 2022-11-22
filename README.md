@@ -9,3 +9,6 @@ The core model can be found in `autopilot/`
 We are working on building custom hardware for tinydrone because the model is intended to be used on Edge devices.
 
 ### tinyML + Rust = ❤️
+
+# Use case
+![Imgur](https://imgur.com/ASiyMvv.png)
