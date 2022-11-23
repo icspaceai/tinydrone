@@ -90,7 +90,7 @@ fun CameraPreviewScreen() {
 }
 
 @Composable
-fun recordButton() {
+fun RecordButton() {
     Column(
         modifier = Modifier
             .fillMaxWidth()
