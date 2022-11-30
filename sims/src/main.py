@@ -1,6 +1,5 @@
 from sim3drotations import Sim3dRotationsModel
 
-
 def main():
     sim = Sim3dRotationsModel()
     sim.run_simulation()
