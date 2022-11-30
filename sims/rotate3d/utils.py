@@ -5,13 +5,13 @@ import numpy as np
 
 
 def create_arrows():
-    _x_arrow = arrow(length=2, shaftwidth=0.1, color=color.red, axis=vector(1, 0, 0))
-    _y_arrow = arrow(length=2, shaftwidth=0.1, color=color.green, axis=vector(0, 1, 0))
-    _z_arrow = arrow(length=2, shaftwidth=0.1, color=color.green, axis=vector(0, 0, 1))
+    arrow(length=2, shaftwidth=0.1, color=color.red, axis=vector(1, 0, 0))
+    arrow(length=2, shaftwidth=0.1, color=color.green, axis=vector(0, 1, 0))
+    arrow(length=2, shaftwidth=0.1, color=color.blue, axis=vector(0, 0, 1))
     
-    imu_front_arrow = arrow(shaftwidth=0.1, color=color.green, axis=vector(1, 0, 0))
-    imu_side_arrow = arrow(shaftwidth=0.1, color=color.green, axis=vector(0, 1, 0))
-    imu_up_arrow = arrow(length=1, shaftwidth=0.1, color=color.magenta, axis=vector(0, 1, 0))
+    imu_front_arrow = arrow(shaftwidth=0.1, color=color.yellow, axis=vector(1, 0, 0))
+    imu_side_arrow = arrow(shaftwidth=0.1, color=color.orange, axis=vector(0, 1, 0))
+    imu_up_arrow = arrow(length=1, shaftwidth=0.1, color=color.magenta, axis=vector(0, 0, 1))
     return (imu_front_arrow, imu_side_arrow, imu_up_arrow)
 
 

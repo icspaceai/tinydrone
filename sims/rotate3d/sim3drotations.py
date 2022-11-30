@@ -36,6 +36,6 @@ class Sim3dRotationsModel():
 
             imuFrontArrow.length = 4
             imuSideArrow.length = 2
-            imuFrontArrow.axis = cross(k, vr)
-            imuUpArrow.axis = v
-            imuSideArrow.axis = s
+            imuFrontArrow.axis = k
+            imuUpArrow.axis = vr
+            imuSideArrow.axis = cross(k, vr)
