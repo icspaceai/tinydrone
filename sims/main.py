@@ -1,4 +1,4 @@
-from sim3drotations import Sim3dRotationsModel
+from rotate3d.sim3drotations import Sim3dRotationsModel
 
 def main():
     sim = Sim3dRotationsModel()

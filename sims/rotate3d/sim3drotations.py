@@ -1,7 +1,7 @@
 from vpython import scene, vector, cross, rate, box
 import numpy as np
 from math import sin, cos
-from utils import create_arrows, init_imu_data, get_imu_data
+from rotate3d.utils import create_arrows, init_imu_data, get_imu_data
 
 
 class Sim3dRotationsModel():
