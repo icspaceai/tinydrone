@@ -36,7 +36,7 @@ fun CameraPreviewScreen() {
     val launcher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestMultiplePermissions(),
         onResult = { granted ->
-            hasCamPermission =granted.size == 2
+            hasCamPermission = granted.size == 2
         }
     )
 
